@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="جزئیات ملک - آپارتمان لوکس">
+  <title>جزئیات ملک | امین‌منطقه</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo"><h1>امین‌منطقه</h1><span>مشاور املاک</span></div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">خانه</a></li>
+          <li><a href="properties.html">املاک</a></li>
+          <li><a href="contact.html">تماس</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="property-detail container">
+    <h2>جزئیات ملک</h2>
+    <div class="property-gallery">
+      <img id="main-image" src="https://via.placeholder.com/800x500" alt="اصلی" class="main-image">
+      <div class="gallery-thumbnails">
+        <img src="https://via.placeholder.com/150x100?text=1" alt="thumb1">
+        <img src="https://via.placeholder.com/150x100?text=2" alt="thumb2">
+        <img src="https://via.placeholder.com/150x100?text=3" alt="thumb3">
+      </div>
+    </div>
+    <div class="property-info">
+      <p><strong>قیمت:</strong> <span class="price">۱۲,۰۰۰,۰۰۰,۰۰۰ تومان</span></p>
+      <p><strong>متراژ:</strong> ۲۴۰ متر مربع</p>
+      <p><strong>تعداد خواب:</strong> ۴ خواب</p>
+      <p><strong>ویژگی‌ها:</strong> آسانسور، پارکینگ، استخر، بالکن</p>
+    </div>
+    <div class="property-location">
+      <h3>موقعیت روی نقشه</h3>
+      <div id="map"></div>
+    </div>
+    <div class="contact-form">
+      <a href="https://wa.me/989123456789" class="btn primary">تماس با مشاور</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container text-center">
+      <p>© 2025 امین‌منطقه</p>
+    </div>
+  </footer>
+
+  <script>
+    function initMap() {
+      const loc = { lat: 35.7411, lng: 51.3847 };
+      const map = new google.maps.Map(document.getElementById('map'), { zoom: 14, center: loc });
+      new google.maps.Marker({ position: loc, map });
+    }
+  </script>
+</body>
+</html>

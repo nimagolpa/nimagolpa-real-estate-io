@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="لیست کامل املاک برای خرید، فروش و اجاره">
+  <title>لیست املاک | امین‌منطقه</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo"><h1>امین‌منطقه</h1><span>مشاور املاک</span></div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">خانه</a></li>
+          <li><a href="properties.html" class="active">فایل‌ها</a></li>
+          <li><a href="contact.html">تماس</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container">
+    <h2>لیست املاک موجود</h2>
+    <div class="filter-bar">
+      <label>نوع ملک:
+        <select id="typeFilter">
+          <option value="all">همه انواع</option>
+          <option value="apartment">آپارتمان</option>
+          <option value="villa">ویلا</option>
+          <option value="land">زمین</option>
+          <option value="commercial">تجاری</option>
+        </select>
+      </label>
+      <label>نوع معامله:
+        <select id="transFilter">
+          <option value="all">همه</option>
+          <option value="buy">خرید</option>
+          <option value="rent">اجاره</option>
+        </select>
+      </label>
+    </div>
+    <div class="property-grid" id="propertyGrid"></div>
+  </section>
+
+  <footer class="footer">
+    <div class="container text-center">
+      <p>© 2025 امین‌منطقه</p>
+    </div>
+  </footer>
+</body>
+</html>
